@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: gJXPTzMPp2PzBRZpaHMjOn6TZiIN/3wNyU0YXU2ctNNgJos74uJ3+NdhfBeZQB0qryCZMEXDDfbcGV66t3trnVA4PW88EcsXNyqYliu3CWji0sS4VKbB+TYslj+VGdb2cznd2FjXK+7lmobRtPIoCYs0kgo6B1H8qB5uY3zuraO3SsJPBOM5kxr9DR7Hswy9mdlNl1D5IvW5ZCEmlArBmYCRObPru9z+ewqbB6B1pZZiZyaynvQaFVXOTA1BorGiwpl19ECkNlTZPk2oOIJp2+zWyhtUDiaPZ/Z0Re4lrIqZ9BwRDrjJyRl2XB7w4mLedjJVgUDETEmaeSk2vhvbWXGQ1kk4WfD0j1aFJZ6dSlE1jEDXmNuK4NRHtRvyzA656bN0RLyU53NFtShaXpecFARv7UYx+MPIrIRhNNvR4Ho+XV7xE6v7FKLLzUaEPxT2DuygjDLsnFLUHPfsFOn7VJXy6iCFjCqK+qWmmYyBByF8Tv2E2iYI0AIBprybadXJhH5e5pOMI3GioVpdKf/LKFhJlle67wALYI8CwN3gAsOjGucwtA0ljDiq7TfhBKAl1NLbOWBkiRCY0cpvPZB0tG6S/mkhCrfySCVZQyxdShpb60UEmkYVQ6ld2EUpfteWxfKEOT/IvA/l9LCsKrimRfPc1/oOxDN4qYOarEj4etk=
+  app: hidden-anchorage-25274
+  on:
+    repo: matteprg/node-restaurants-app
+    branch: feature/with-tests
